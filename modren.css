@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./bshah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    font: bold;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    width: 25%;
+}
+
+nav .menu a:first-child{
+    color:  #00b894;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 4px wheat;
+}
+
+
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 1px 5px wheat;
+    margin: 25px 0 20px 0;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 1px 1px wheat;
+}
+
+section a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 30px;
+    outline: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+
+section .bntone{
+    background-color: white;
+    color: black;
+}
+
+section .btntwo{
+    color: white;
+    background: #00b894;
+}
+
+.change-contant::after{
+    content: '';
+    animation: changetext 15s infinite linear;
+    color: teal;
+}
+
+@keyframes changetext{
+    0%{content: "Pakistan";}
+    20%{content: "Azad kashmir";}
+    35%{content: "Karachi";}
+    50%{content: "Lahore";}
+    65%{content: "Mirpur";}
+    80%{content: "Banjoosa";}
+    100%{content: "Multan";}
+}
